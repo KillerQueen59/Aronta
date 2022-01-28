@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_title_learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Judul Materi"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_learn"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_learn" />
+
+        <TextView
+            android:id="@+id/txt_detail_learn"
+            android:text="Jika Anda sudah siap menambahkan fungsi penelusuran ke aplikasi, Android membantu Anda menerapkan antarmuka pengguna dengan dialog penelusuran yang muncul di bagian atas jendela aktivitas atau widget penelusuran yang dapat Anda sisipkan dalam tata letak. Baik dialog penelusuran maupun widget penelusuran dapat mengirimkan kueri penelusuran pengguna ke aktivitas tertentu dalam aplikasi Anda. Dengan cara ini, pengguna dapat memulai penelusuran dari aktivitas mana pun di mana dialog atau widget penelusuran tersedia, dan sistem akan memulai aktivitas yang sesuai untuk menjalankan penelusuran dan menampilkan hasilnya."
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_learn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

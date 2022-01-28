@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Review Pesanan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pesanan"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/ln_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_name_buruh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama: "/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_no_telepon_buruh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telepon: "/>
+
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga/jam: "/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_tanggal_pemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal: "/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_tipe_jasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipe Jasa: "/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_jam_kerja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam Kerja: "/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txt_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Harga: "/>
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/review_tutor_rating"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_pesanan" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20sp"
+        android:background="@drawable/round_white"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Selesai "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_tutor_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aronta</string>
+    <string name="aronta">ARONTA</string>
+    <string name="belum_punya_akun_daftar_sekarang">Belum punya akun? <b> Daftar Sekarang </b> </string>
+    <string name="welcome">Selamat Datang Di <b>Aronta</b> </string>
+    <string name="apa_yang_anda_mau_lakukan_hari_ini">Apa yang anda mau lakukan hari ini?</string>
+    <string name="sudah_punya_akun_silahkan_masuk">Sudah punya akun? <b>Silahkan Masuk</b> </string>
+    <string name="buat_pesanan">Buat Pesanan</string>
+</resources>

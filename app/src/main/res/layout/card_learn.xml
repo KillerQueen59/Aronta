@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@color/green"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/img_learn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title_learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:text="Lorem ipsum"/>
+
+        <TextView
+            android:id="@+id/title_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
